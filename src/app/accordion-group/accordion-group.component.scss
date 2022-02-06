@@ -1,6 +1,12 @@
 .mypanel {
-    background-color: white;
+    background-color: #f1efef;
     color: #222;
+    flex-basis: 30%;
+    min-width: 260px;
+    max-width: 300px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    overflow: hidden;
   }
   
   .mypanel .title {
@@ -17,4 +23,10 @@
   
   .mypanel .body.hidden {
     display: none;
+  }
+  img{
+    width: 80px;
+    cursor: pointer;
+    transform: rotate(90deg);
+    margin-left: 80px;
   }

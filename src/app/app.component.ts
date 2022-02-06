@@ -22,7 +22,7 @@ export class AppComponent {
     this.service.getBeerList().subscribe(
       data => {
           this.beerList = data;
-          // console.log(this.dictData);
+          console.log("iamge", this.beerList.image_url);
       } ,
       error => {
           console.log("some error occured");
@@ -30,9 +30,4 @@ export class AppComponent {
       }
   );
   }
-  // users = [
-  //   { id: 1001, label: 'Roma', lat: 42, lng: 12 },
-  //   { id: 1002, label: 'Copenaghen', lat: 56, lng: 14},
-  //   { id: 1003, label: 'Gibuti', lat: 11, lng: 44}
-  // ];
 }

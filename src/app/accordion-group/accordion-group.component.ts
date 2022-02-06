@@ -19,12 +19,14 @@ export class AccordionGroupComponent implements OnInit {
  /**
   * Text to display in the group title bar
   */
- @Input() title: string = "";
+ @Input() title: string;
 
  /**
   * Emitted when user clicks on group titlebar
   * @type {EventEmitter<any>}
   */
  @Output() toggle: EventEmitter<any> = new EventEmitter<any>();
+
+ @Input() imgSrc: string;
 
 }

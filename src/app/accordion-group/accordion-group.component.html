@@ -1,4 +1,5 @@
-<div class="mypanel">
+<div class="mypanel" (click)="toggle.emit()">
+  <img [src]="imgSrc" (click)="toggle.emit()">
     <div class="title" (click)="toggle.emit()">
       {{title}}
     </div>

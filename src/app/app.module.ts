@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomAccordionComponent } from './custom-accordion/custom-accordion.component';
 import { AccordionGroupComponent } from './accordion-group/accordion-group.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { AccordionGroupComponent } from './accordion-group/accordion-group.compo
   imports: [
     BrowserModule,
     HttpClientModule,
+    FlexLayoutModule,
     AppRoutingModule
   ],
   providers: [],

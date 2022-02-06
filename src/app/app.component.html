@@ -1,11 +1,14 @@
-<div>
-  <h2>Phebsoft Task </h2>
 
-  <app-custom-accordion *ngIf="beerList; else loading">
-      <app-accordion-group  [title]="u.name" *ngFor="let u of beerList">
-        {{u.tagline}}
+<div fxFlex fxLayout="column" >
+  <h2>Phebsoft Task </h2>
+  <app-custom-accordion *ngIf="beerList; else loading" fxFlex fxLayout="row wrap" 
+  fxLayoutAlign="space-evenly center" fxLayoutGap="20px">
+      <app-accordion-group [imgSrc]="u.image_url"  [title]="u.name" *ngFor="let u of beerList">
+        <strong> Tagline:</strong> {{u.tagline}}
         <hr />
-        {{u.description}}
+        <strong>Description:</strong> {{u.description}}
+        <hr/>
+        <strong>First Brewed:</strong> {{u.first_brewed}}
       </app-accordion-group>
     </app-custom-accordion>
 
