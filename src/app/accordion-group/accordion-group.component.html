@@ -1,6 +1,6 @@
 <div class="mypanel" (click)="toggle.emit()">
-  <img [src]="imgSrc" (click)="toggle.emit()">
-    <div class="title" (click)="toggle.emit()">
+  <img [src]="imgSrc" >
+    <div class="title">
       {{title}}
     </div>
     <div class="body" [ngClass]="{'hidden': !opened}">

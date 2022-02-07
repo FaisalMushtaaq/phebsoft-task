@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
 import { SharedServiceService } from './shared-service.service';
 
 @Component({
@@ -16,6 +16,12 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.getList();
+  }
+  public  toggleAllItems: EventEmitter<boolean> = new EventEmitter();
+
+  toggleAll(){
+    this.toggleAllItems.emit(true);
+
   }
 
   getList(){

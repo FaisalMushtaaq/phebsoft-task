@@ -1,8 +1,11 @@
 
 <div fxFlex fxLayout="column" >
   <h2>Phebsoft Task </h2>
+
+  <button (click)="toggleAll()"
+  style="width: 120px; padding: 10px;cursor: pointer; ">Toggle All</button>
   <app-custom-accordion *ngIf="beerList; else loading" fxFlex fxLayout="row wrap" 
-  fxLayoutAlign="space-evenly center" fxLayoutGap="20px">
+  fxLayoutAlign="space-evenly center" fxLayoutGap="20px" [toggleAllItems] = "toggleAllItems">
       <app-accordion-group [imgSrc]="u.image_url"  [title]="u.name" *ngFor="let u of beerList">
         <strong> Tagline:</strong> {{u.tagline}}
         <hr />
